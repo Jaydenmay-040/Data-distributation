@@ -1,12 +1,10 @@
+
 import matplotlib.pyplot as plt
-import numpy as np
-names = ['Andy', 'Martin', 'Zahara', 'Vuyo', 'Ziyaad']
-marks = [12,  99, 65, 85, 42]
-x_pos = [i for i, _ in enumerate(names)] # labels on the x-axis
+x = [14.2, 16.5, 11.8, 15.3, 18.8, 22.5, 19.5]
+y = [220.00, 330.00, 190.00, 340.00, 410.00, 445.00, 415.00]
 # labeling and visuals
-plt.bar(x_pos, marks, color='blue')
-plt.xlabel("Names")
-plt.ylabel("Marks (%)")
-plt.title("Python marks for 5 students")
-plt.xticks(x_pos, names)
+plt.xlabel("Temperatures(Degrees Celsius)")
+plt.ylabel("Price in Rands(R)")
+plt.title("Soup sales in relation to temperature")
+plt.scatter(x, y)
 plt.show()
